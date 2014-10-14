@@ -1,6 +1,6 @@
 {
   "name": "ember-kiss-metrics",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -10,11 +10,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/stefanpenner/ember-kiss-metrics",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Stefan Penner & Yapp Labs",
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.2.0",
@@ -34,5 +34,6 @@
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "dependencies": {}
 }

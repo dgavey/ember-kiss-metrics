@@ -2,7 +2,14 @@
 
 This README outlines the details of collaborating on this Ember addon.
 
-## Installation
+## Usage
+
+* `npm install --save-dev ember-kiss-metrics`
+* add `config.kissmetricsKey` to config/environment.js
+
+in `routes` and `controller` you will have `_kmq.push` available
+
+## Development
 
 * `git clone` this repository
 * `npm install`
