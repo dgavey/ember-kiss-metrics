@@ -34,8 +34,10 @@ if (typeof bowser === 'object' && bowser) {
 }
 
 kmq.push([ 'set', set ]);
+kmq.destroy = function () { }; // workaround
 
 export default {
-  create:  function () { return kmq; },
-  destroy: function () { }
+  create:  function () {
+    return kmq;
+  }
 };
