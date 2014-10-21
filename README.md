@@ -1,6 +1,6 @@
 # Ember-kiss-metrics
 
-This README outlines the details of collaborating on this Ember addon.
+Quick and simple ember & KISSmetrics integration
 
 ## Usage
 
