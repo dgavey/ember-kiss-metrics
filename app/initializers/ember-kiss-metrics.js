@@ -1,5 +1,4 @@
-export function initialize(container, application) {
-  container.options('kmq:main');
+export function initialize(application) {
   application.inject('controller', '_kmq', 'kmq:main');
   application.inject('route',      '_kmq', 'kmq:main');
 };
