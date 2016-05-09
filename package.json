@@ -1,6 +1,6 @@
 {
   "name": "ember-kiss-metrics",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "directories": {
     "doc": "doc",
     "test": "tests"
