@@ -1,5 +1,11 @@
-export function initialize(container, application) {
-  container.options('kmq:main');
+export function initialize() {
+  let application = arguments[0];
+  if (arguments.length === 2) {
+    //for ember 1.x
+    const container = arguments[0];
+    application =  arguments[1];
+    container.options('kmq:main'); 
+  }
   application.inject('controller', '_kmq', 'kmq:main');
   application.inject('route',      '_kmq', 'kmq:main');
 };

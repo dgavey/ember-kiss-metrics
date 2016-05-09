@@ -6,6 +6,7 @@ Quick and simple ember & KISSmetrics integration
 
 * `npm install --save-dev ember-kiss-metrics`
 * add `config.kissmetricsKey` to config/environment.js
+* optionally add `kissmetricsForceSSL=true` to config/environment.js to force loading scripts via SSL.  This is required if using Cordova/PhoneGap.
 
 in `routes` and `controller` you will have `_kmq.push` available
 
