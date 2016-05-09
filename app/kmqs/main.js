@@ -16,8 +16,13 @@ function load(u) {
 }
 
 if (config.kissmetricsKey) {
-  load('https://i.kissmetrics.com/i.js');
-  load('https://doug1izaerwt3.cloudfront.net/' + config.kissmetricsKey + '.1.js')
+  let pathPrefix = '//';
+  if (config.kissmetricsForceSSL) {
+    pathPrefix = 'https://';
+  }
+  load(pathPrefix + 'i.kissmetrics.com/i.js');
+  load(pathPrefix + 'doug1izaerwt3.cloudfront.net/' + config.kissmetricsKey + '.1.js')
+
 } else {
   throw new TypeError('Missing config/environment entry `config.kissmetricsKey`');
 }
